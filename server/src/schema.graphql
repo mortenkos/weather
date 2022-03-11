@@ -1,0 +1,33 @@
+type Query {
+  citiesAndWeather: [City]
+  currentWeather(name: String!): City
+}
+
+type Mutation {
+  addCity(city: String!): CityPayload!
+  removeCity(city: String!): String
+}
+
+type City {
+  id: ID!
+  name: String!
+  weather: Weather
+}
+
+type Weather {
+  id: ID!
+  temp: Float
+  wind: Wind
+  humidity: Int
+  time: Int
+}
+type Wind {
+  id: ID!
+  speed: Float
+  deg: Int
+}
+
+type CityPayload {
+    city: City!
+}
+

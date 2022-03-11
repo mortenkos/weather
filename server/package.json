@@ -1,0 +1,25 @@
+{
+  "name": "weather_app_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Morten Kose",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^3.10.0",
+    "apollo-server": "^3.6.3",
+    "dotenv": "^16.0.0",
+    "graphql": "^16.3.0",
+    "node-fetch": "^2.6.7",
+    "node-schedule": "^2.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
